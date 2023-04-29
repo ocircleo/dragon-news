@@ -2,25 +2,12 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
-import { RouterProvider, createBrowserRouter } from 'react-router-dom';
-import ErrorPage from './ErrorPage.jsx';
-import Home from './compo/Home/Home.jsx';
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <App></App>,
-    children: [
-      {
-        path: '/',
-        element: <Home></Home>,
-      },
-    ],
-  },
-]);
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { RouterProvider } from 'react-router-dom';
+import Routers from './assets/Routers.jsx';
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router} >
-      <App></App>
-    </RouterProvider>
+  <RouterProvider router={Routers}></RouterProvider>
   </React.StrictMode>,
 )
