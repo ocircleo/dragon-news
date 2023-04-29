@@ -8,7 +8,7 @@ const Navigation = () => {
     return (
         <>
 
-            <Navbar key={'md'} bg="light" expand={'md'} className="mb-3 bg-none">
+            <Navbar key={'md'}  expand={'md'} className="mb-3 bg-none">
                 <Container fluid>
                     {/* <Navbar.Brand href="#">Navbar Offcanvas</Navbar.Brand> */}
                     <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${'md'}`} />
